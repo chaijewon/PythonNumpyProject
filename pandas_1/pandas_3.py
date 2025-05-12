@@ -119,6 +119,21 @@ import csv
 file=open('c:/pydata/EMP.csv')
 emp=csv.reader(file)
 #print(emp)
+"""
+=> INITCAP 
 for i in emp:
     print(i[1].title())
+"""
+# 문자열 길이 확인
+"""
+for i in emp:
+    print(i[1],len(i[1]))
+"""
+# 문자열 결합
+"""
+   empno ename job mgr hiredate sal comm deptno
+     0     1    2   3     4      5    6     7
+"""
+for i in emp:
+    print(f"{i[1]}의 급여는 {i[5]}")
 file.close()
